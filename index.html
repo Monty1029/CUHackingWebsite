@@ -38,31 +38,35 @@
         </nav>
 
         <div id="splash">
-          <div class="row">
-            <div class=" col-md-8 col-md-offset-2 splash-logo">
-              <img class="displayed" src="cuhackinglogo.png" alt="CUHacking logo" height="90%" width="90%" align="middle" class="image-responsive">
+          <div class="container-fluid">
+            <div class="row">
+              <div class=" col-md-8 col-md-offset-2 splash-logo">
+                <img class="displayed" src="cuhackinglogo.png" alt="CUHacking logo" height="90%" width="90%" align="middle" class="image-responsive">
+              </div>
+            </div>
+            <div class="row" id="main-btns">
+              <div class="col-xs-12 text-center">
+                <!--<a><button class="btn btn-primary">Apply Now!</button></a>-->
+                <p class="registration">Registration coming soon!</p>
+              </div>
             </div>
           </div>
-          <div class="row" id="main-btns">
-            <div class="col-xs-12 text-center"> 
-              <!--<a><button class="btn btn-primary">Apply Now!</button></a>-->
-              <p class="registration">Registration coming soon!</p>
-            </div>
-          </div>
-      </div>
+        </div>
       </div>
     </header>
     <section id="about">
-      <h1 class="text-center title">Hack at Canada's Captial Univeristy</h1>
-      <div class="content">
-        <div class="text-left text">
-          CUHacking is Carleton University’s first large-scale hackathon, and the largest hackathon in Ottawa. It will take place over 24 hours through a weekend during the Winter 2017 semester, in early March. Around 300 students are expected to participate. Participation is free and food will be provided!
-</div>
+      <div class="container-fluid">
+        <h1 class="text-center title">Hack at Canada's Captial Univeristy</h1>
+        <div class="content">
+          <div class="text-left text">
+            CUHacking is Carleton University’s first large-scale hackathon, and the largest hackathon in Ottawa. It will take place over 24 hours through a weekend during the Winter 2017 semester, in early March. Around 300 students are expected to participate. Participation is free and food will be provided!
+          </div>
+        </div>
       </div>
     </section>
     <section id="faq">
       <h1 class="text-center title">Frequently Asked Questions</h1>
-      <div class="content">
+      <div class=" container-fluid content">
         <div class="row">
           <div class="col-xs-12 col-sm-4">
             <div class="question">What is a hackathon?</div>
@@ -74,17 +78,15 @@
             <div class="question">How much experience do I need?</div>
             <div class="answer">
               No experience is needed! A hackathon is the best opportunity for participants to learn new tools to develop their idea. Whether you’ve been programming since you were 10 or have no idea what a microcontroller is, everyone has many different ways to benefit from a hackathon. It's a perfect opportunity to learn.
-
             </div>
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="question">Who can participate?</div>
             <div class="answer">
               Any student from any university or college is eligible to participate. Participation is free, but will require signing up. Only a certain number of registrants will be accepted depending on the volume of sign ups.
-
             </div>
           </div>
-        </div>
+        </div> <!-- End of row -->
         <div class="row">
           <div class="col-xs-12 col-sm-4">
             <div class="question">Can I submit an old project?</div>
@@ -104,7 +106,7 @@
               Workshops on certain fundamentals of various software and hardware will be run throughout the hackathon.
             </div>
           </div>
-        </div>
+        </div> <!-- End of row -->
       <div class="row">
           <div class="col-xs-12 col-sm-4">
             <div class="question">Will hardware be provided?</div>
@@ -124,18 +126,18 @@
               Fill out the contact form at the bottom of this page, and one of our organizers will get in contact with you as soon as possible!
             </div>
           </div>
-        </div>
-        <div>
+        </div> <!-- End of row -->
+      <div>
     </section>
     <section id="sponsors">
       <h1 class="text-center title">Sponsors</h1>
       <div class="sponsors-info">
-              By sponsoring CUHacking, your organization has the opportunity to advertise, run challenges and workshops, network with the best engineering students, and discover new project ideas. If your company is interested in sponsoring this event, please take a look at our <a href = "/sponsorship-package.pdf"><b>sponsorship package</b></a> and <a href="mailto:sponsor@cuhacking.com"><b>contact us</b></a>. Below are some of our current sponsors.
-              </div>
+      By sponsoring CUHacking, your organization has the opportunity to advertise, run challenges and workshops, network with the best engineering students, and discover new project ideas. If your company is interested in sponsoring this event, please take a look at our <a href = "/sponsorship-package.pdf"><b>sponsorship package</b></a> and <a href="mailto:sponsor@cuhacking.com"><b>contact us</b></a>. Below are some of our current sponsors.
+      </div>
     </section>
     <section id="contact">
       <h1 class="text-center title">Contact</h1>
-      <div class="content">
+      <div class="content container-fluid">
         <div class="row">
           <div class="col-xs-12 col-sm-4">
             <p>
@@ -144,34 +146,32 @@
               One of our organizers will get back to you as soon as possible.
             </p>
             <div class="row" id="social-media-icons">
-              <img class="col-xs-4" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" />
-              <img class="col-xs-4" src="https://upload.wikimedia.org/wikipedia/en/9/9f/Twitter_bird_logo_2012.svg" />
+              <a href="https://www.facebook.com/CUHacking/"><img class="col-xs-4" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" /></a>
+              <a href="#"><img class="col-xs-4" src="https://upload.wikimedia.org/wikipedia/en/9/9f/Twitter_bird_logo_2012.svg" /></a>
             </div>
           </div>
 
-          <!--<div class="col-xs-12 col-sm-8">
-              <form class="contact" action="index.html" method="post">
+          <div class="col-xs-12 col-sm-8">
+              <form id ="contact-form" class="contact" action="https://formspree.io/arungalva@hotmail.com" method="post">
                 <div class="form-group">
                   <label for="Name"></label>
-                  <input type="text" class="form-control" id="" placeholder="Name">
+                  <input name ="name" type="text" class="form-control" id="" placeholder="Name">
                 </div>
                 <div class="form-group">
                   <label for="Email"></label>
-                  <input type="text" class="form-control" id="" placeholder="Email address">
+                  <input name="email" type="text" class="form-control" id="" placeholder="Email address">
                 </div>
                 <div class="form-group">
                   <label for="Subject"></label>
-                  <input type="text" class="form-control" id="" placeholder="Subject">
+                  <input name="subject" type="text" class="form-control" id="" placeholder="Subject">
                 </div>
                 <div class="form-group">
                   <label for="message"></label>
-                  <textarea rows="5" placeholder="Message" class="form-control"></textarea>
+                  <textarea name="message" rows="5" placeholder="Message" class="form-control"></textarea>
                 </div>
-                <button type="button" class="btn">
-                  Send
-                </button>
+                <input type="submit" id="submit" name="send" class="submitBtn btn" value="Send">
               </form>
-          </div>-->
+          </div>
         </div>
       </div>
     </section>
@@ -187,13 +187,47 @@
       });
       $(document).ready(function(){
         var scroll = $(window).scrollTop();
-        console.log(scroll);
-
         if(scroll>197){
           $('#navbar-logo').css("margin-top","-10px");
           $(".navbar-default .navbar-collapse, .navbar-default .navbar-form").css("margin-top","0px");
         }
-      })
+
+        $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top-50
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+
+        $('#contact-form').submit(function(e){
+          e.preventDefault();
+          $.ajax({
+              url: "https://formspree.io/you@email.com",
+              method: "POST",
+              data: $(this).serializeArray(),
+              dataType: "json",
+              beforeSend: function() {
+          			$('#contact-form').append('<div class="alert alert--loading">Sending message…</div>');
+          		},
+          		success: function(data) {
+          			$('#contact-form').find('.alert--loading').hide();
+          			$('#contact-form').append('<div class="alert alert--success">Message sent!</div>');
+          		},
+          		error: function(err) {
+          			$('#contact-form').find('.alert--loading').hide();
+          			$('#contact-form').append('<div class="alert alert--error">Ops, there was an error.</div>');
+          		}
+          });
+        });
+      });
     </script>
   </body>
 </html>
