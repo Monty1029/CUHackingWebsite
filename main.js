@@ -30,7 +30,7 @@ $(document).ready(function(){
   $('#contact-form').submit(function(e){
     e.preventDefault();
     $.ajax({
-        url: "https://formspree.io/you@email.com",
+        url: "https://formspree.io/contact@cuhacking.com",
         method: "POST",
         data: $(this).serializeArray(),
         dataType: "json",
@@ -47,4 +47,8 @@ $(document).ready(function(){
         }
     });
   });
+});
+
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
 });
