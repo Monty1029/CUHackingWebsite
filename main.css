@@ -123,3 +123,27 @@ img.displayed{
   font-weight: 400;
   text-align: right;
 }
+
+.social-link{
+  width:50px;
+  height: auto;
+  margin:20px;
+}
+
+.submitBtn:hover{
+  background: #aa001d;
+  color:white;
+}
+
+@media (max-width: 768px) {
+  #navbar-logo{
+    height:40px;
+  }
+
+  .navbar-collapse {
+    background: #aa001d !important;
+  }
+  .navbar-collapse>li>a:hover{
+    background: black;
+  }
+}
