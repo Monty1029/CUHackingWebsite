@@ -7,6 +7,8 @@ $(document).scroll(function(){
 });
 $(document).ready(function(){
   var scroll = $(window).scrollTop();
+  var winH = $(window).height() > 550? $(window).height(): 550;
+  $('#welcome').css("height",winH);
   if(scroll>197){
     $('#navbar-logo').css("margin-top","-10px");
     $(".navbar-default .navbar-collapse, .navbar-default .navbar-form").css("margin-top","0px");
