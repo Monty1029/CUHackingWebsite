@@ -7,8 +7,28 @@ header{
   padding-top: 120px;
 }
 
-#main-btns{
+.margin-top-20{
+  margin-top:20px;
+}
+#bronze-sponsors > img {
+  max-width: 240px;
+  max-height: 150px;
+}
 
+#silver-sponsors >img {
+  max-width: 400px;
+  max-height: 150px;
+}
+.sponsors{
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
 }
 .registration {
   font-size: 20pt;
