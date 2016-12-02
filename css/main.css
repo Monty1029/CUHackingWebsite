@@ -3,12 +3,40 @@ body{
 }
 header{
   background-color: #191919;
-  height:100vh;
   padding-top: 120px;
 }
 
-#main-btns{
+.margin-top-20{
+  margin-top:20px;
+}
+#bronze-sponsors > img {
+  max-width: 240px;
+  max-height: 150px;
+}
 
+#splash{
+  width:100%;
+  height: 100%;
+}
+
+#partners{
+  margin-top: 80px;
+}
+
+#silver-sponsors >img {
+  max-width: 400px;
+  max-height: 150px;
+}
+.sponsors{
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
 }
 .registration {
   font-size: 20pt;
@@ -22,7 +50,7 @@ header{
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  padding: 10px 60px;
+  padding: 20px 60px;
   transition: all .2s ease-out;
   border-radius: 12px;
 }
@@ -31,8 +59,12 @@ header{
   color:#ffffff;
   background-color: inherit;
 }
+.vc {
+  display: flex;
+  align-items: center;
+}
 #main-btns{
-  margin-top: 20px;
+  margin-top: 50px;
 }
 #sponsors>.container>.row{
   padding:20px;
@@ -58,9 +90,6 @@ section{
 #contact{
   font-weight: 300;
 }
-#splash{
-  padding-top: 30px;
-}
 img.displayed{
   display: block;
   margin-left: auto;
@@ -84,6 +113,7 @@ img.displayed{
   font-size: 20px;
   margin-top: 20px;
 }
+
 #social-media-icons>img{
   max-width:150px;
 }

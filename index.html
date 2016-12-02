@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header id="welcome">
@@ -23,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#welcome"><img src="cuhackinglogo.png" alt="CUHacking logo" id="navbar-logo"></a>
+              <a class="navbar-brand" href="#welcome"><img src="img/cuhackinglogo.png" alt="CUHacking logo" id="navbar-logo"></a>
             </div>
 
             <div id="navbar" class="navbar-collapse collapse">
@@ -43,13 +43,17 @@
           <div class="container">
             <div class="row">
               <div class=" col-md-8 col-md-offset-2 splash-logo">
-                <img class="displayed" src="cuhackinglogo.png" alt="CUHacking logo" height="90%" width="90%" align="middle" class="image-responsive">
+                <img class="displayed" src="img/cuhackinglogo.png" alt="CUHacking logo" height="90%" width="90%" align="middle" class="image-responsive">
               </div>
             </div>
             <div class="row" id="main-btns">
               <div class="col-xs-12 text-center">
                 <a href="https://cuhacking.typeform.com/to/Lg0EdF"><button class="btn btn-primary">Apply Now!</button></a>
               </div>
+            </div>
+            <div class="row sponsors visible-xs visible-sm" id="partners">
+              <img class="col-xs-12 col-sm-6" src="img/IEEE_CARLETON_Logo.png"/>
+              <img class="col-xs-12 col-sm-6" src="img/ccss-structurelogo.png"/>
             </div>
           </div>
         </div>
@@ -72,29 +76,18 @@
         By sponsoring CUHacking, your organization has the opportunity to advertise, run challenges and workshops, network with the best engineering students, and discover new project ideas. If your company is interested in sponsoring this event, please take a look at our <a href = "/sponsorship-package.pdf"><b>sponsorship package</b></a> and <a href="mailto:sponsor@cuhacking.com"><b>contact us</b></a>. Below are some of our current sponsors.
         </div><br>
         <div class="container">
-         <!--<div class="row" id="main-sponsors">
-           <img class="col-xs-12 col-md-6" src="http://getuikit.com/docs/images/placeholder_600x400_2.svg" />
-           <img class="col-xs-12 col-md-6" src="http://getuikit.com/docs/images/placeholder_600x400_2.svg" />
+         <!--<div class="row sponsors" id="main-sponsors">
+           <img class="col-xs-12 col-xs-12" src="http://getuikit.com/docs/images/placeholder_600x400_2.svg" />
+           <img class="col-xs-12 col-xs-12" src="http://getuikit.com/docs/images/placeholder_600x400_2.svg" />
          </div>-->
-         <div class="row" id="other-sponsors">
-           <img class="col-xs-4" src="github-logo.svg" />
-           <img class="col-xs-4" src="bloomberg-logo.svg" />
-           <img class="col-xs-4" src="march-networks.png" />
+         <div class="row sponsors margin-top-20" id ="silver-sponsors">
+           <img class="col-xs-6" src="img/sponsors/march-networks.png" />
+           <img class="col-xs-6" src="img/sponsors/carleton-compsci.png" />
          </div>
-         <div class="row" id="other-sponsors">
-           <!--<img class="col-xs-4" src="http://getuikit.com/docs/images/placeholder_600x400_2.svg" />-->
-           <img class="col-xs-4" src="carleton-compsci.png" />
-           <!--<img class="col-xs-4" src="http://getuikit.com/docs/images/placeholder_600x400_2.svg" />-->
+         <div class="row sponsors margin-top-20" id="bronze-sponsors">
+           <img class="col-xs-4 " src="img/sponsors/github-logo.svg" />
+           <img class="col-xs-4 " src="img/sponsors/bloomberg-logo.svg" />
          </div>
- 
-        <!-- <div class="row" id="other-sponsors">
-           <img class="col-xs-3" src="http://getuikit.com/docs/images/placeholder_600x400_2.svg" />
-           <img class="col-xs-3" src="http://getuikit.com/docs/images/placeholder_600x400_2.svg" />
-           <img class="col-xs-3" src="http://getuikit.com/docs/images/placeholder_600x400_2.svg" />
-           <img class="col-xs-3" src="http://getuikit.com/docs/images/placeholder_600x400_2.svg" />
- 
-         </div>-->
- 
        </div>
       </div>
     </section>
@@ -196,6 +189,8 @@
             <div class="row" id="social-media-icons">
               <a href="https://www.facebook.com/CUHacking/"><img class="social-link" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" /></a>
             </div>
+            <a href="http://ieeecarleton.ca"><img class="col-xs-12 visible-md visible-lg" src="img/IEEE_CARLETON_Logo.png"/></a>
+            <a href="#"><img class="col-xs-12 margin-top-20 visible-md visible-lg" src="img/ccss-structurelogo.png"/></a>
           </div>
 
           <div class="col-xs-12 col-sm-8">
@@ -224,6 +219,6 @@
     </section>
     <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
