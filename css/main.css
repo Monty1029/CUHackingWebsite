@@ -3,7 +3,7 @@ body{
 }
 header{
   background-color: #191919;
-  height:100vh;
+  height:100%;
   padding-top: 120px;
 }
 
@@ -13,6 +13,10 @@ header{
 #bronze-sponsors > img {
   max-width: 240px;
   max-height: 150px;
+}
+
+#partners{
+  margin-top: 80px;
 }
 
 #silver-sponsors >img {
@@ -42,7 +46,7 @@ header{
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  padding: 10px 60px;
+  padding: 20px 60px;
   transition: all .2s ease-out;
   border-radius: 12px;
 }
@@ -51,8 +55,12 @@ header{
   color:#ffffff;
   background-color: inherit;
 }
+.vc {
+  display: flex;
+  align-items: center;
+}
 #main-btns{
-  margin-top: 20px;
+  margin-top: 50px;
 }
 #sponsors>.container>.row{
   padding:20px;
@@ -101,6 +109,7 @@ img.displayed{
   font-size: 20px;
   margin-top: 20px;
 }
+
 #social-media-icons>img{
   max-width:150px;
 }
