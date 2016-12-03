@@ -114,6 +114,11 @@ img.displayed{
   margin-top: 20px;
 }
 
+.association{
+  font-weight: 500;
+  font-size: 20px;
+}
+
 #social-media-icons>img{
   max-width:150px;
 }
