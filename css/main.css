@@ -10,9 +10,10 @@ header{
 .margin-top-20{
   margin-top:20px;
 }
-#bronze-sponsors > img {
+#bronze-sponsors > div > a > img {
   max-width: 240px;
   max-height: 150px;
+  width: 100%;
 }
 
 #splash{
@@ -24,18 +25,17 @@ header{
   margin-top: 80px;
 }
 
-#silver-sponsors >img {
+#silver-sponsors > div > a >img {
   max-width: 400px;
+  width: 100%;
 }
 .sponsors{
   display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	-webkit-box-align: center;
-
 	align-items: center;
 }
 .registration {
@@ -193,5 +193,11 @@ img.displayed{
   }
   .navbar-collapse>li>a:hover{
     background: black;
+  }
+}
+
+@media(min-width: 768px){
+  #silver-sponsors > div > a >img{
+    max-width: 400px;
   }
 }
