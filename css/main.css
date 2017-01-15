@@ -169,6 +169,20 @@ img.displayed{
   color:white;
 }
 
+#application-deadline{
+  color: white;
+}
+
+.time {
+  font-size:24px;
+}
+
+#hack-date{
+  font-size: 1.5em;
+  color: white;
+  margin: 20px;
+}
+
 @media (max-width: 768px) {
   #navbar-logo{
     height:40px;
