@@ -55,7 +55,7 @@ $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
 });
 
-$('#application-deadline').countdown('2017/01/14 ')
+$('#application-deadline').countdown('2017/01/28 ')
 .on('update.countdown', function(event) {
   var format = '<span class="time">%H:%M:%S</span>';
   if(event.offset.totalDays > 0) {
