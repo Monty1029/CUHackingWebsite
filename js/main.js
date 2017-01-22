@@ -7,7 +7,7 @@ $(document).scroll(function(){
 });
 $(document).ready(function(){
   var scroll = $(window).scrollTop();
-  var winH = $(window).height() > 550? $(window).height(): 550;
+  var winH = $(window).height() > 550? $(window).height()+40: 590;
   $('#welcome').css("height",winH);
   if(scroll>197){
     $('#navbar-logo').css("margin-top","-10px");
@@ -53,4 +53,22 @@ $(document).ready(function(){
 
 $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
+});
+
+$('#application-deadline').countdown('2017/02/03 ')
+.on('update.countdown', function(event) {
+  var format = '<span class="time">%H:%M:%S</span>';
+  if(event.offset.totalDays > 0) {
+    format = '<span class="time">%-d </span>day%!d ' + format;
+  }
+  if(event.offset.weeks > 0) {
+    format = '<span class="time">%-w</span> week%!w ' + format;
+  }
+  $(this).html(event.strftime(format));
+})
+.on('finish.countdown', function(event) {
+  $(this).html("First round of applications are closed");
+  $("#apply-now").addClass("hide");
+  $("#deadline").hide();
+  $("#hack-date").show();
 });
