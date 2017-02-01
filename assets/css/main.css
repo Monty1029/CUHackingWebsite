@@ -1,0 +1,123 @@
+html, body {
+  background: #191919;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  height: 100%;
+  color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  padding: 120px auto;
+}
+
+p {
+  font-size: calc(16px + (24-16) * (100vw - 400px) / (800 - 400)); 
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.157em;
+}
+
+h2 {
+  font-size: 2.369em;
+}
+
+h3 {
+  font-size: 1.777em;
+}
+
+h4 {
+  font-size: 1.333em;
+}
+
+small {
+  font-size: 0.8em; 
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 50%;
+  width: 50%;
+  display: block;
+  margin: 20vh auto; /* 30vh pretty much vertically centers it */
+}
+
+header {
+  min-height: 80vh;
+  background-color: #191919;
+}
+
+article {
+  color: #191919;
+  width: 65%;
+  padding: 5% 17.5%;
+  text-align: left;
+}
+
+article .container {
+  max-width: auto;
+}
+
+article:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+article:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#gold-sponsors {
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-around; /* Safari 7.0 + */
+  -webkit-align-items: center; /* Safari 7.0 + */
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  align-items: center;
+}
+
+#gold-sponsors img { 
+  max-width: 600px;
+}
+
+#silver-sponsors { 
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-around; /* Safari 7.0 + */
+  -webkit-align-items: center; /* Safari 7.0 + */
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  align-items: center;
+}
+
+#silver-sponsors img {
+  max-width: 400px;
+}
+
+#bronze-sponsors { 
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-around; /* Safari 7.0 + */
+  -webkit-align-items: center; /* Safari 7.0 + */
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  align-items: center;
+}
+
+#bronze-sponsors img { 
+  max-width: 245px;
+}
