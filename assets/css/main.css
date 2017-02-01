@@ -44,6 +44,10 @@ small {
   font-size: 0.8em; 
 }
 
+.chrome p {
+  font-size: 16px;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -57,8 +61,14 @@ small {
 }
 
 header {
-  min-height: 80vh;
+  min-height: 60vh;
   background-color: #191919;
+}
+
+@-moz-document url-prefix() {
+  header {
+    min-height: 80vh;
+  }
 }
 
 article {
