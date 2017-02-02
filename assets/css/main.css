@@ -131,3 +131,22 @@ article:nth-child(even) {
 #bronze-sponsors img { 
   max-width: 245px;
 }
+
+.col-3 {
+  width: 80%;
+  padding: 2.5% 7.5%;
+  text-align: left;
+      -webkit-column-count: 3;
+         -moz-column-count: 3;
+             -column-count: 3;
+  -webkit-column-width: 200px;
+     -moz-column-width: 200px;
+          column-width: 200px;
+      -webkit-column-gap: 2em;
+         -moz-column-gap: 2em;
+              column-gap: 2em;
+}
+
+.box {
+  display: block;
+}
