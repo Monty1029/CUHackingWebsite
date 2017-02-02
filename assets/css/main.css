@@ -65,6 +65,7 @@ header {
   background-color: #191919;
 }
 
+/* firefox vh is fix */
 @-moz-document url-prefix() {
   header {
     min-height: 80vh;
@@ -102,6 +103,8 @@ article:nth-child(even) {
 
 #gold-sponsors img { 
   max-width: 600px;
+  max-height: 250px;
+  padding: 5px 20px;
 }
 
 #silver-sponsors { 
@@ -116,6 +119,8 @@ article:nth-child(even) {
 
 #silver-sponsors img {
   max-width: 400px;
+  max-height: 175px;
+  padding: 5px 20px;
 }
 
 #bronze-sponsors { 
@@ -129,24 +134,15 @@ article:nth-child(even) {
 }
 
 #bronze-sponsors img { 
-  max-width: 245px;
+  max-width: 200px;
+  max-height: 100px;
+  padding: 5px 20px; 
 }
 
-.col-3 {
-  width: 80%;
-  padding: 2.5% 7.5%;
-  text-align: left;
-      -webkit-column-count: 3;
-         -moz-column-count: 3;
-             -column-count: 3;
-  -webkit-column-width: 200px;
-     -moz-column-width: 200px;
-          column-width: 200px;
-      -webkit-column-gap: 2em;
-         -moz-column-gap: 2em;
-              column-gap: 2em;
+th {
+  padding: 0 20px 0 0;
 }
 
-.box {
-  display: block;
+td {
+  padding: 0 20px 5px 0;
 }
