@@ -53,9 +53,9 @@ header{
 
 #silver-sponsors > div > a >img {
   max-width: 400px;
-  width: 100%;
+  width:  100%;
 }
-.sponsors{
+.sponsors {
   display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
@@ -106,10 +106,12 @@ header{
 #gold-sponsors img {
   max-width: 600px;
   max-height: 250px;
-  padding: 5px 20px;
+  margin: 50px 0;
+  padding: 0 20px;
 }
 
 #silver-sponsors {
+  padding-top: 20px;
   display: -webkit-flex; /* Safari */
   -webkit-justify-content: space-around; /* Safari 7.0 + */
   -webkit-align-items: center; /* Safari 7.0 + */
@@ -119,13 +121,21 @@ header{
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  #gold-sponsors, #silver-sponsors {
+    border-bottom: 1px solid rgba(207, 17, 45, 0.3);
+  }
+}
+
 #silver-sponsors img {
   max-width: 400px;
   max-height: 175px;
-  padding: 5px 20px;
+  margin: 10px 0;
+  padding: 0 20px;
 }
 
 #bronze-sponsors {
+  padding-top: 20px;
   display: -webkit-flex; /* Safari */
   -webkit-justify-content: space-around; /* Safari 7.0 + */
   -webkit-align-items: center; /* Safari 7.0 + */
@@ -138,7 +148,8 @@ header{
 #bronze-sponsors img {
   max-width: 200px;
   max-height: 100px;
-  padding: 5px 20px;
+  margin: 10px 0;
+  padding: 0 20px;
 }
 
 .content{
