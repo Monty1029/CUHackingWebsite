@@ -2,16 +2,24 @@ $(document).scroll(function(){
   var navBar = $(".navbar");
   if(navBar.hasClass("affix")){
     $('#navbar-logo').css("margin-top","-10px");
-    $(".navbar-default .navbar-collapse, .navbar-default .navbar-form").css("margin-top","0px")
+    if($(window).width() <= 768) {
+      $('#mlh-trust-badge').css("margin-top", "-30px");
+    } else {
+      $('#mlh-trust-badge').css("margin-top", "0px");
+    }
+    $(".navbar-default .navbar-collapse, .navbar-default .navbar-form").css("margin-top","0px");
   }
 });
 $(document).ready(function(){
   var scroll = $(window).scrollTop();
-  var winH = $(window).height() > 550? $(window).height()+40: 590;
+  var winH = $(window).height() > 550? $(window).height()+40: 590; 
   $('#welcome').css("height",winH);
   if(scroll>197){
     $('#navbar-logo').css("margin-top","-10px");
     $(".navbar-default .navbar-collapse, .navbar-default .navbar-form").css("margin-top","0px");
+    if($(window).width() <= 768) {
+      $('#mlh-trust-badge').css("margin-top", "-30px");
+    }
   }
 
   $(function() {
