@@ -53,7 +53,7 @@ $(document).ready(function(){
         },
         error: function(err) {
           $('#contact-form').find('.alert--loading').hide();
-          $('#contact-form').append('<div class="alert alert--error">Ops, there was an error.</div>');
+          $('#contact-form').append('<div class="alert alert--error">Oops, there was an error.</div>');
         }
     });
   });
