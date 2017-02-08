@@ -75,7 +75,7 @@ $('#application-deadline').countdown('2017/02/03 ')
   $(this).html(event.strftime(format));
 })
 .on('finish.countdown', function(event) {
-  $(this).html("First round of applications are closed");
+  $(this).html("Applications are now closed.");
   $("#apply-now").addClass("hide");
   $("#deadline").hide();
   $("#hack-date").show();
