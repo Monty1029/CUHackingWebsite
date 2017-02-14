@@ -104,9 +104,9 @@ header{
 }
 
 #gold-sponsors img {
-  max-width: 600px;
+  max-width: 500px;
   max-height: 250px;
-  margin: 50px 0;
+  margin: 10px 0;
   padding: 0 20px;
 }
 
@@ -128,8 +128,8 @@ header{
 }
 
 #silver-sponsors img {
-  max-width: 400px;
-  max-height: 175px;
+  max-width: 350px;
+  max-height: 200px;
   margin: 10px 0;
   padding: 0 20px;
 }
@@ -147,7 +147,7 @@ header{
 
 #bronze-sponsors img {
   max-width: 200px;
-  max-height: 100px;
+  max-height: 150px;
   margin: 10px 0;
   padding: 0 20px;
 }
