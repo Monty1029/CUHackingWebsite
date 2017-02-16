@@ -316,21 +316,21 @@ img.displayed{
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #gold-sponsors img {
     width: 100%;
     height: auto;
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 400px) {
   #silver-sponsors img {
     width: 100%;
     height: auto;
   }
 }
 
-@media (max-width: 200px) {
+@media (max-width: 300px) {
   #bronze-sponsors img {
     width: 100%;
     height: auto;
