@@ -290,9 +290,9 @@ img.displayed{
 }
 
 #hack-date{
-  font-size: 1.5em;
-  color: white;
-  margin: 20px;
+  font-size: 1.3em;
+  color: #f2f2f2;
+  margin: 15px;
 }
 
 @media (max-width: 768px) {
