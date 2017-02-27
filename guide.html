@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CUHacking Guide</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="css/guide.css">
+  </head>
+
+  <body>
+    <!-- side nav -->
+    <nav class="w3-sidenav w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color:#cc3333;" id="sidenav">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding-xlarge w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px;color:#f2f2f2;">Close</a>
+      <div class="w3-container" style="color:#f2f2f2;">
+        <h3 class="w3-padding-64"><b>CUHacking</h3>
+      </div>
+      <a href="#" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Slack</a>
+      <a href="#wifi" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Wifi</a>
+      <a href="#google" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Google Intern Application</a>
+      <a href="#maps" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Maps</a>
+      <a href="#contact" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Contact</a>
+      <a href="#emergency" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Emergency</a>
+    </nav>
+
+    <!-- mobile nav -->
+    <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#cc3333;">
+      <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()" style="background-color:#cc3333;color:#f2f2f2">X</a>
+      <span style="color:#f2f2f2;">CUHacking</span>
+    </header>
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="overlay"></div>
+
+    <!-- content -->
+    <article id="slack">  
+      <div class="container">
+        <div class="page-container">
+          <h1><b>Slack</b></h1>
+          <p>Join our Slack @ <a href="cuhacking2017.slack.com" style="text-decoration:none;">cuhacking2017.slack.com</a></p> 
+        </div>
+      </div>
+    </article>
+
+    <article id="wifi">
+      <div class="container">
+        <div class="page-container">
+          <h1><b>Wifi</b></h1>
+          <p>Username: Wifiguestw17 <br> Password: HMTory.57!</p>  
+        </div>
+      </div>
+    </article>
+
+    <article id="google">
+      <div class="container">
+        <div class="page-container">
+          <img src="img/google.png" alt="Google" style="width:400px;"></a> 
+          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSccY46Q2mQa0KyeQDboa45vHWcCLJTfhBUcFIzZFokvk1eesw/viewform" style="text-decoration:none;">Sign up for a possible Google Internship here!</a></p>
+        </div>
+      </div>
+    </article> 
+
+    <script>
+      function w3_open() {
+        document.getElementById('sidenav').style.display = "block";
+        document.getElementById('overlay').style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById('sidenav').style.display = "none";
+        document.getElementById('overlay').style.display = "none";
+      }
+    </script>
+  </body>
+</html>
