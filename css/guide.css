@@ -97,8 +97,8 @@ article:nth-child(even) {
   text-align: center;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .page-container {
-    margin-left: 340px;
+    margin-left: 100px;
   }
 }
