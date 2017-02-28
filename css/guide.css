@@ -73,7 +73,7 @@ article:nth-child(even) {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  padding-bottom: 200px;
+  padding-bottom: 200px; 
   text-align: center;
 }
 
@@ -84,7 +84,7 @@ article:nth-child(even) {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  padding-bottom: 200px;
+  padding-bottom: 200px; 
 }
 
 .page-container p {
@@ -94,4 +94,11 @@ article:nth-child(even) {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .page-container {
+    margin-left: 100px;
+  }
 }
