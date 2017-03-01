@@ -47,6 +47,14 @@ header{
   height: 100%;
 }
 
+.left-splash { 
+  width: 20%;
+}
+
+.right-splash {
+  width: 10%; 
+}
+
 #partners{
   margin-top: 80px;
 }
