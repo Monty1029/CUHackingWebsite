@@ -22,9 +22,6 @@ a {
   color: inherit;
 }
 
-.container {
-}
-
 h1 {
   font-size: 4em;
 }
@@ -42,13 +39,12 @@ h4 {
 }
 
 .container { 
-  max-width: 960px;
-  margin: 50px 10px 0 350px;
+   margin-left: 300px;
 }
 
 @media (max-width: 992px) {
-  .container {
-    margin: 100px 40px;
+  .container { 
+    margin-left: 0px;
   }
 } 
 
@@ -63,42 +59,26 @@ article:nth-child(even) {
 
 .page-container {
   height: 100vh;   
-  position: relative;
 }
 
-.page-container h1 {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  padding-bottom: 200px; 
-  text-align: center;
+.flex-container { 
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex; 
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;  
+  padding-top: 38vh;
 }
 
-.page-container img {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  padding-bottom: 200px; 
+.flex { 
+  text-align: center; 
 }
 
-.page-container p {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-@media (min-width: 992px) {
-  .page-container {
-    margin-left: 100px;
+@media (max-width: 992px) {
+  .flex {
+    padding-top: 50px;
   }
 }
