@@ -401,3 +401,14 @@ img.displayed{
     left: 10px;
   } 
 }
+
+.hatch-bottom {
+  padding-left: 40px;
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .hatch-bottom {
+    width: 30%;    
+  }
+}
