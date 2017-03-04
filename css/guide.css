@@ -134,13 +134,13 @@ tbody tr:hover {
 }
 
 @media (max-width: 992px) {
-  #Challenge1, #Challenge2 p {
+  #Challenge1, #Challenge2, #Challenge3, #Challenge4 p {
     font-size: 0.75rem;
   }
 }
 
 @media (max-height: 680px) {
-  #Challenge1, #Challenge2 p {
-    font-size: 0.5rem;
+  #Challenge1, #Challenge2, #Challenge3, #Challenge4 p {
+    font-size: 0.65rem;
   }
 }
