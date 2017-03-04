@@ -132,3 +132,9 @@ tbody tr:hover {
   background: #1e1e1c;
   color: #f2f2f2;
 }
+
+@media (max-width: 992px) {
+  #Challenge1, #Challenge2 p {
+    font-size: 0.75rem;
+  }
+}
