@@ -35,7 +35,7 @@ h3 {
 }
 
 h4 {
-  font-size: 0.75em;
+  font-size: 20px;
 }
 
 .container { 
@@ -84,12 +84,51 @@ article:nth-child(even) {
   justify-content: center;  
 }
 
+.flex-container-workshop { 
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex; 
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;  
+  padding-top: 25vh;
+}
+
 .flex { 
   text-align: center; 
+}
+
+.flex-left {
+  text-align: left;
+  padding-left: 80px;
 }
 
 @media (max-width: 992px) {
   .flex {
     padding-top: 50px;
   }
+}
+
+.justify {
+  padding: 0 50px;
+  text-align: justify;
+}
+
+.ls {
+  text-align: 
+}
+
+thead {
+  border-bottom: thin solid #1e1e1c;
+}
+
+tbody tr td {
+  padding: 0 10px;
+}
+
+tbody tr:hover {
+  background: #1e1e1c;
+  color: #f2f2f2;
 }

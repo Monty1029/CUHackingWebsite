@@ -24,8 +24,9 @@
       <a href="#wifi" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Wifi</a>
       <a href="#challenges" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Challenges</a>
       <a href="#maps" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Maps</a>
+      <a href="#workshops" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Workshops</a>
+      <a href="#social" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Social Media</a>
       <a href="#google" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Google Intern Application</a>
-      <a href="#contact" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Contact</a>
       <a href="#emergency" onclick="w3_close()" class="w3-padding w3-hover-white" style="color:#f2f2f2;">Emergency</a>
     </nav>
 
@@ -43,7 +44,7 @@
           <div class="flex-container">
             <div class="flex">
               <h1><b>Slack</b></h1>
-              <p>Join our Slack @ <a href="https://cuhacking2017.slack.com" style="text-decoration:none;">cuhacking2017.slack.com</a></p> 
+              <p>Join our Slack @ <a href="https://cuhacking2017.slack.com">cuhacking2017.slack.com</a></p> 
             </div> 
           </div>
         </div>
@@ -62,10 +63,24 @@
 
       <article id="challenges">
         <div class="page-container">
-          <div class="flex-container">
+          <div class="flex-container-no-padding">
             <div class="flex">
-              <h1><b>Challenges</b></h1>
-              <p>hi</p>
+              <h2>Challenges</h2>
+              <div class="justify">
+                <button onclick="accordion('Challenge1')" class="w3-btn-block w3-left-align">Martello</button>
+                <div id="Challenge1" class="w3-hide w3-container">               
+                  <br>
+                  <p>Create a web application that continuously collects and visualizes all of the devices connected on the simulated home network. To help simplify the challenge, all of the raw data collected will be provided.  Consider what a useful dashboard might look like with the given data.  Create at least one visualization that draws a representation of the home network. Then try to provide answers to questions people might have about their home network; like, what’s causing my internet so slow?</p>
+                  <p>Where to start:<br>Go to http://&lt;hostname&gt;/devices/ for a list of devices’ URLs</p>
+                  <p>Scoring categories:<br>1. Demo Presentation<br>2. Appearance<br>3. Accuracy of Data Presented<br>4. Innovation<br>5. Code Quality<br>6. Usefulness</p>
+                </div>
+                <button onclick="accordion('Challenge2')" class="w3-btn-block w3-left-align">Global Cybersecurity Resource</button>
+                <div id="Challenge2" class="w3-hide w3-container"> 
+                  <br>
+                  <p>Using a Content Management System (Wordpress, Drupal or Joomla) and HTML/CSS/PHP, the objective is to implement a simple resume processing system.</p>
+                  <p>Requirements:<br>1. Job seekers register on website. Registration includes name, email address, password selection and facility to upload PDF file into the content management system (CMS). All resumes are in PDF format; all other formats are to be rejected.<br>2. HR account with initial default password. Once logged in HR can modify password.<br>3. HR uses a search feature (textbox) where the HR can filter the resumes based on matching key words/phrases to be matched against all resumes.<br>4. Result of analysis is a web page ranking resumes from most matches to least.<br>5. Resumes are to be hyperlinked so that HR can review any resume<br>6. HR sends results to job seekers through the CMS directly</p> 
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -85,6 +100,78 @@
           </div>
         </div>
       </article>
+
+      <article id="workshops">
+        <div class="page-container">
+          <div class="flex-container-workshop">
+            <div class="flex">
+              <h2>Workshops</h2>
+              <table>
+                <thead>
+                <tr>
+                  <th>Time (Sat)</th>
+                  <th>Workshop</th>
+                  <th>Room</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>2:00PM</td>
+                  <td>GraphQL</td>
+                  <td>ME 3269</td>
+                </tr>
+                <tr>
+                  <td>3:30</td>
+                  <td>ReactJS</td>
+                  <td>ME 3236</td>
+                </tr>
+                <tr>
+                  <td>3:30</td>
+                  <td>Arduino</td>
+                  <td>ME 3235</td>
+                </tr>
+                <tr>
+                  <td>4:30</td>
+                  <td>RL Solutions</td>
+                  <td>ME 3269</td>
+                </tr>
+                <tr>
+                  <td>5:00</td>
+                  <td>iOS</td>
+                  <td>ME 3356</td>
+                </tr>
+                <tr>
+                  <td>8:30</td>
+                  <td>Martello</td>
+                  <td>ME 3235</td>
+                </tr>
+                <tr>
+                  <td>10:00</td>
+                  <td>Scaling Database Queries with NodeJS and MongoDB</td>
+                  <td>ME 3235</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="social">
+        <div class="page-container">
+          <div class="flex-container">
+            <div class="flex">
+              <h2>Social Media</h2>
+              <div class="flex-left">
+                <p><a href="https://www.instagram.com/cuhacking/" style="text-decoration:none;"><img src="img/instagram.png" alt="Instagram"style="width:20px;">&nbspInstagram</a></p> 
+                <p><a href="https://www.facebook.com/CUHacking/" style="text-decoration:none;"><img src="img/facebook-logo.png" alt="Facebook" style="width:20px;">&nbspFacebook</a></p>
+                <p><a href="https://twitter.com/cuhacking" style="text-decoration:none;"><img src="img/twitter-logo.png" alt="Twitter" style="width:20px;">&nbspTwitter</a></p>
+              </div>
+              <img src="img/snapchat-logo.png" alt="Snapchat" style="width:100px;"> 
+            </div>
+          </div>
+        </div>
+      </article>
     
       <article id="google"> 
         <div class="page-container">
@@ -96,6 +183,18 @@
           </div> 
         </div>
       </article> 
+
+      <article id="emergency">
+        <div class="page-container">
+          <div class="flex-container">
+            <div class="flex">
+              <h2>Emergency Contact</h2>
+              <p>CUSERT</p>
+              <p>613-520-2600 ext. 4166</p>
+            </div>
+          </div>
+        </div>
+      </article>
     </div>
 
     <script>
@@ -114,6 +213,18 @@
         document.getElementById("modal01").style.display = "block";
         var captionText = document.getElementById("caption");
         captionText.innerHTML = element.alt;
+      }
+
+      function accordion(id) { 
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className += " w3-red";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className = 
+          x.previousElementSibling.className.replace(" w3-red", "");
+        }
       }
     </script>
   </body>
